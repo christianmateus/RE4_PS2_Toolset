@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A9A33C24-0E79-46B3-8426-08B09302D0C0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>RE4_PS2_Toolset</RootNamespace>
+    <AssemblyName>RE4_PS2_Toolset</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\AEV\AEV.cs" />
+    <Compile Include="Forms\AEV\AEVForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AEV\AEVForm.Designer.cs">
+      <DependentUpon>AEVForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ETS\ETS.cs" />
+    <Compile Include="Forms\ETS\ETSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ETS\ETSForm.Designer.cs">
+      <DependentUpon>ETSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\AEV\AEVForm.resx">
+      <DependentUpon>AEVForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ETS\ETSForm.resx">
+      <DependentUpon>ETSForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Forms\ETS\Images\model.psd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Forms\ETS\Images\0.png" />
+    <Content Include="Forms\ETS\Images\1.png" />
+    <Content Include="Forms\ETS\Images\10.png" />
+    <Content Include="Forms\ETS\Images\100.png" />
+    <Content Include="Forms\ETS\Images\101.png" />
+    <Content Include="Forms\ETS\Images\102.png" />
+    <Content Include="Forms\ETS\Images\103.png" />
+    <Content Include="Forms\ETS\Images\104.png" />
+    <Content Include="Forms\ETS\Images\105.png" />
+    <Content Include="Forms\ETS\Images\11.png" />
+    <Content Include="Forms\ETS\Images\12.png" />
+    <Content Include="Forms\ETS\Images\13.png" />
+    <Content Include="Forms\ETS\Images\14.png" />
+    <Content Include="Forms\ETS\Images\15.png" />
+    <Content Include="Forms\ETS\Images\16.png" />
+    <Content Include="Forms\ETS\Images\17.png" />
+    <Content Include="Forms\ETS\Images\18.png" />
+    <Content Include="Forms\ETS\Images\19.png" />
+    <Content Include="Forms\ETS\Images\2.png" />
+    <Content Include="Forms\ETS\Images\20.png" />
+    <Content Include="Forms\ETS\Images\21.png" />
+    <Content Include="Forms\ETS\Images\22.png" />
+    <Content Include="Forms\ETS\Images\23.png" />
+    <Content Include="Forms\ETS\Images\24.png" />
+    <Content Include="Forms\ETS\Images\25.png" />
+    <Content Include="Forms\ETS\Images\26.png" />
+    <Content Include="Forms\ETS\Images\27.png" />
+    <Content Include="Forms\ETS\Images\28.png" />
+    <Content Include="Forms\ETS\Images\29.png" />
+    <Content Include="Forms\ETS\Images\3.png" />
+    <Content Include="Forms\ETS\Images\30.png" />
+    <Content Include="Forms\ETS\Images\31.png" />
+    <Content Include="Forms\ETS\Images\32.png" />
+    <Content Include="Forms\ETS\Images\33.png" />
+    <Content Include="Forms\ETS\Images\34.png" />
+    <Content Include="Forms\ETS\Images\35.png" />
+    <Content Include="Forms\ETS\Images\36.png" />
+    <Content Include="Forms\ETS\Images\37.png" />
+    <Content Include="Forms\ETS\Images\38.png" />
+    <Content Include="Forms\ETS\Images\39.png" />
+    <Content Include="Forms\ETS\Images\4.png" />
+    <Content Include="Forms\ETS\Images\41.png" />
+    <Content Include="Forms\ETS\Images\42.png" />
+    <Content Include="Forms\ETS\Images\43.png" />
+    <Content Include="Forms\ETS\Images\44.png" />
+    <Content Include="Forms\ETS\Images\45.png" />
+    <Content Include="Forms\ETS\Images\46.png" />
+    <Content Include="Forms\ETS\Images\47.png" />
+    <Content Include="Forms\ETS\Images\48.png" />
+    <Content Include="Forms\ETS\Images\49.png" />
+    <Content Include="Forms\ETS\Images\5.png" />
+    <Content Include="Forms\ETS\Images\50.png" />
+    <Content Include="Forms\ETS\Images\51.png" />
+    <Content Include="Forms\ETS\Images\52.png" />
+    <Content Include="Forms\ETS\Images\53.png" />
+    <Content Include="Forms\ETS\Images\54.png" />
+    <Content Include="Forms\ETS\Images\55.png" />
+    <Content Include="Forms\ETS\Images\56.png" />
+    <Content Include="Forms\ETS\Images\57.png" />
+    <Content Include="Forms\ETS\Images\58.png" />
+    <Content Include="Forms\ETS\Images\59.png" />
+    <Content Include="Forms\ETS\Images\6.png" />
+    <Content Include="Forms\ETS\Images\60.png" />
+    <Content Include="Forms\ETS\Images\61.png" />
+    <Content Include="Forms\ETS\Images\62.png" />
+    <Content Include="Forms\ETS\Images\63.png" />
+    <Content Include="Forms\ETS\Images\64.png" />
+    <Content Include="Forms\ETS\Images\65.png" />
+    <Content Include="Forms\ETS\Images\66.png" />
+    <Content Include="Forms\ETS\Images\67.png" />
+    <Content Include="Forms\ETS\Images\68.png" />
+    <Content Include="Forms\ETS\Images\69.png" />
+    <Content Include="Forms\ETS\Images\7.png" />
+    <Content Include="Forms\ETS\Images\70.png" />
+    <Content Include="Forms\ETS\Images\71.png" />
+    <Content Include="Forms\ETS\Images\72.png" />
+    <Content Include="Forms\ETS\Images\73.png" />
+    <Content Include="Forms\ETS\Images\74.png" />
+    <Content Include="Forms\ETS\Images\75.png" />
+    <Content Include="Forms\ETS\Images\76.png" />
+    <Content Include="Forms\ETS\Images\77.png" />
+    <Content Include="Forms\ETS\Images\78.png" />
+    <Content Include="Forms\ETS\Images\79.png" />
+    <Content Include="Forms\ETS\Images\8.png" />
+    <Content Include="Forms\ETS\Images\80.png" />
+    <Content Include="Forms\ETS\Images\81.png" />
+    <Content Include="Forms\ETS\Images\82.png" />
+    <Content Include="Forms\ETS\Images\83.png" />
+    <Content Include="Forms\ETS\Images\84.png" />
+    <Content Include="Forms\ETS\Images\85.png" />
+    <Content Include="Forms\ETS\Images\86.png" />
+    <Content Include="Forms\ETS\Images\87.png" />
+    <Content Include="Forms\ETS\Images\88.png" />
+    <Content Include="Forms\ETS\Images\89.png" />
+    <Content Include="Forms\ETS\Images\9.png" />
+    <Content Include="Forms\ETS\Images\90.png" />
+    <Content Include="Forms\ETS\Images\91.png" />
+    <Content Include="Forms\ETS\Images\92.png" />
+    <Content Include="Forms\ETS\Images\93.png" />
+    <Content Include="Forms\ETS\Images\94.png" />
+    <Content Include="Forms\ETS\Images\95.png" />
+    <Content Include="Forms\ETS\Images\96.png" />
+    <Content Include="Forms\ETS\Images\97.png" />
+    <Content Include="Forms\ETS\Images\98.png" />
+    <Content Include="Forms\ETS\Images\99.png" />
+    <Content Include="Forms\ETS\Images\model.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\0.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\1.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\2.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\3.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\4.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\5.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\6.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\7.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\8.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\9.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\10.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\11.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\12.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\13.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\14.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\15.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\16.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\17.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\18.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\19.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\20.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\21.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\22.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\23.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\24.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\25.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\26.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\27.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\28.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\29.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\30.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\31.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\32.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\33.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\34.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\35.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\36.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\37.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\38.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\39.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\41.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\42.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\43.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\44.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\45.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\46.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\47.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\48.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\49.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\50.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\51.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\52.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\53.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\54.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\55.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\56.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\57.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\58.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\59.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\60.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\61.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\62.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\63.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\64.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\65.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\66.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\67.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\68.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\69.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\70.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\71.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\72.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\73.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\74.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\75.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\76.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\77.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\78.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\79.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\80.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\81.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\82.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\83.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\84.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\85.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\86.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\87.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\88.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\89.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\90.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\91.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\92.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\93.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\94.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\95.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\96.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\97.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\98.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\99.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\100.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\101.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\102.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\103.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\104.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\105.png" />
+    <None Include="Forms\ETS\Images\Nova pasta\model.png" />
+    <Content Include="Utils\palette.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
