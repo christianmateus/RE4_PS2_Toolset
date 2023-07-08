@@ -238,6 +238,7 @@
             this.table.Size = new System.Drawing.Size(908, 420);
             this.table.TabIndex = 3;
             this.table.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.table_CellMouseUp);
+            this.table.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.table_CellValueChanged);
             // 
             // panel1
             // 
@@ -286,14 +287,14 @@
             // removeObjectToolStripMenuItem1
             // 
             this.removeObjectToolStripMenuItem1.Name = "removeObjectToolStripMenuItem1";
-            this.removeObjectToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.removeObjectToolStripMenuItem1.Size = new System.Drawing.Size(160, 22);
             this.removeObjectToolStripMenuItem1.Text = "Remove object";
             this.removeObjectToolStripMenuItem1.Click += new System.EventHandler(this.removeObjectToolStripMenuItem1_Click);
             // 
             // duplicateObjectToolStripMenuItem
             // 
             this.duplicateObjectToolStripMenuItem.Name = "duplicateObjectToolStripMenuItem";
-            this.duplicateObjectToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.duplicateObjectToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.duplicateObjectToolStripMenuItem.Text = "Duplicate object";
             this.duplicateObjectToolStripMenuItem.Click += new System.EventHandler(this.duplicateObjectToolStripMenuItem_Click_1);
             // 

@@ -1,5 +1,5 @@
-﻿using RE4_PS2_Toolset.Forms;
-using RE4_PS2_Toolset.Forms.AEV;
+﻿using RE4_PS2_Toolset.Forms.AEV;
+using RE4_PS2_Toolset.Forms.CAM;
 using RE4_PS2_Toolset.Forms.ETS;
 using System;
 using System.Windows.Forms;
@@ -26,6 +26,13 @@ namespace RE4_PS2_Toolset
             ETSForm ets = new ETSForm();
 
             ets.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            CAMForm cam = new CAMForm();
+
+            cam.Show();
         }
     }
 }

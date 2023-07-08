@@ -456,5 +456,13 @@ namespace RE4_PS2_Toolset.Forms.ETS
         {
             DuplicateObject();
         }
+
+        private void table_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 2)
+            {
+                Console.WriteLine(table.Rows[globalSelectedRow].Cells[e.ColumnIndex].Value.ToString());
+            }
+        }
     }
 }
